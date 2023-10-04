@@ -1,3 +1,14 @@
 body{
     background-color: #4e6cf0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 1000px;
+}
+
+.box{
+    width: 500px;
+    
 }
