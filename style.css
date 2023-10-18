@@ -1,14 +1,43 @@
-body{
+body {
     background-color: #4e6cf0;
     margin: 0;
+    overflow: hidden;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 1000px;
 }
 
-.box{
-    width: 500px;
-    
+.box {
+    margin: 0;
+    padding: 0;
+    float: left;
+    filter: blur(2px) saturate(.5);
+    transition: 0.5s;
+}
+
+#bill {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+#tihi {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+#tarto {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.box:hover {
+    filter: blur(0px);
 }
