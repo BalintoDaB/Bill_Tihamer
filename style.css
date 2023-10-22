@@ -38,6 +38,32 @@ body {
     transform: translate(-50%);
 }
 
+#left {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: 15%;
+    text-align: center;
+}
+
+#right {
+    width: 30vw;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 3%;
+}
+
 .box:hover {
     filter: blur(0px);
+}
+
+.mid {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.sec {
+    color: #794ef0;
 }
