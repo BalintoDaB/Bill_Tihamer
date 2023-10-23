@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Nemes Tihamér & Bill Gates</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="mid white">Név</h1>
-        <h2 class="mid sec" id="nev">Bill Gates</h2>
+        <h1 class="mid white" id="nev-t"></h1>
+        <h2 class="mid sec" id="nev"></h2>
         <div id="left">
-            <h1 class="white">Született</h1>
-            <h2 class="sec" id="szul">October 28, 1955</h2>
+            <h1 class="white" id="szul-t"></h1>
+            <h2 class="sec" id="szul"></h2>
             <br>
             <br>
-            <h1 class="white" id="vagyon-t">Vagyon (2018)</h1>
-            <h2 class="sec" id="vagyon">97,4B dollár</h2>
+            <h1 class="white" id="elhunyt-t"></h1>
+            <h2 class="sec" id="elhunyt"></h2>
             <br>
             <br>
-            <h1 class="white">Fő ismerettség</h1>
-            <h2 class="sec" id="ism">Microsoft</h2>
+            <h1 class="white" id="ism-t"></h1>
+            <h2 class="sec" id="ism"></h2>
         </div>
         <div id="tarto">
             <div class="box">
-                <img src="Images/half_bill.png" id="bill" onpointerenter="ChangeScene('Bill')">
+                <a href="bill.html"><img src="Images/half_bill.png" id="bill" onpointerenter="ChangeScene('Bill')" onpointerleave="BasicScene()"></a>
             </div>
             <div class="box">
-                <img src="Images/half-tihi.jpg" id="tihi" onpointerenter="ChangeScene('Tihi')">
+                <a href="tihi.html"><img src="Images/half-tihi.jpg" id="tihi" onpointerenter="ChangeScene('Tihi')" onpointerleave="BasicScene()"></a>
             </div>
         </div>
         <div id="right">
-            <h1 class="white">Fő adatok</h1>
-            <h2 class="sec">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eum iure laborum incidunt eligendi dignissimos pariatur aperiam explicabo ab repellat, tempore quae debitis numquam! Ipsum a commodi minima fuga dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit earum et, beatae optio similique, necessitatibus deserunt facilis reiciendis minus debitis iste modi iusto ab laudantium blanditiis est fugit voluptatem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis distinctio error quod aliquid! Aliquid inventore sunt amet veritatis, quod eveniet magni, ab libero iste cupiditate, quibusdam molestias eum at voluptate?</h2>
+            <h1 class="white mid" id="adatok-t"></h1>
+            <h2 class="sec mid" id="adatok"></h2>
         </div>
     </div>
     <script src="script.js"></script>
