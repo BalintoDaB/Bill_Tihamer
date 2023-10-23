@@ -40,5 +40,14 @@ function BasicScene(){
 }
 
 function ChangeImg(id, img){
-    document.getElementById(`${id}`).src = `${img}`;
+    document.getElementById(`${id}`).src = `../Images/${img}`;
+}
+
+function ChangeImgBack(id){
+    if(id == "tihi_noblur"){
+        document.getElementById(`${id}`).src = `../Images/Nemes_Tihamér-1 (1).jpg`;
+    }
+    else{
+        document.getElementById(`${id}`).src = `../Images/Visit_of_Bill_Gates,_Chairman_of_Breakthrough_Energy_Ventures,_to_the_European_Commission_5_(cropped)_(cropped) (1) (1).jpg`;
+    }
 }
