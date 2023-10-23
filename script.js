@@ -38,3 +38,7 @@ function BasicScene(){
     document.getElementById("ism-t").innerHTML = "";
     document.getElementById("adatok-t").innerHTML = "";
 }
+
+function ChangeImg(id, img){
+    document.getElementById(`${id}`).src = `${img}`;
+}
