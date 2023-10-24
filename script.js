@@ -16,16 +16,16 @@ function ChangeScene(sceneName) {
     }
 }
 
-function ChangeText(id, ember) {
+function ChangeText(id) {
     console.log(id);
-
+    num = id.split("_")[2];
+    ember = id.split("_")[0];
     billSzovegek = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
     tihiSzovegek = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
-    if (ember == "Bill") {
-        num = id.split("_")[2];
+    if (ember == "bill") {
         document.getElementById(id).innerHTML = billSzovegek[num];
     }
-    else if (ember == "Tihi") {
+    else if (ember == "tihi") {
         num = id.split("_")[2];
         document.getElementById(id).innerHTML = tihiSzovegek[num];
     }
