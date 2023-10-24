@@ -1,0 +1,39 @@
+@media screen and (max-width: 970px) {
+    #left {
+        display: none;
+    }
+
+    #right {
+        display: none;
+    }
+
+    /* .box img {
+        width: 200px;
+    } */
+
+    #tarto {
+        transform: translate(-50%) !important;
+    }
+
+    .box {
+        filter: blur(0) saturate(1) !important;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #left {
+        display: none;
+    }
+
+    #right {
+        display: none;
+    }
+
+    .box img {
+        width: calc(25vw);
+    }
+
+    #tarto {
+        transform: translate(-50%) !important;
+    }
+}
