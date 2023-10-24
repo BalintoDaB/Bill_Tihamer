@@ -1,7 +1,7 @@
 body {
-    background: linear-gradient(-45deg, #4e6cf0, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #2a4ff3, #37aeda, #55c7ac);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
     margin: 0;
     overflow: hidden;
     overflow: hidden;
@@ -12,9 +12,11 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -40,7 +42,7 @@ body {
     padding: 0;
 }
 
-#bill_noblur{
+#bill_noblur {
     border-radius: 8px;
     margin: 0;
     padding: 0;
@@ -54,7 +56,7 @@ body {
     padding: 0;
 }
 
-#tihi_noblur{
+#tihi_noblur {
     border-radius: 8px;
     margin: 0;
     padding: 0;
@@ -82,40 +84,41 @@ body {
     width: 30vw;
 }
 
-#nev{
+#nev {
     font-size: 2vw;
 }
 
-#adatok{
+#adatok {
     text-decoration: underline 2px #27187E;
 }
 
-#back{
+#back {
     position: absolute;
     top: calc(95% - 250px);
     left: 50%;
     transform: translate(-50%);
 }
 
-#back a{
+#back a {
     padding: 10px;
     font-size: 2vw;
     text-decoration: none;
-    border: solid 3px ;
+    border: solid 3px;
     border-radius: 8px;
 }
 
-#back a:hover{   
+#back a:hover {
     transition: .5s;
-    color: #27187E;  
+    color: #27187E;
 }
 
 .box:hover {
     filter: blur(0px);
 }
 
-.single_left h1:hover, .single_right h1:hover{
-    transform: scale(1.2);    
+.single_left h1:hover,
+.single_right h1:hover {
+    transform: scale(1.2);
     transition: .5s;
     color: #27187E;
 }
@@ -133,6 +136,6 @@ body {
     color: #27187E;
 }
 
-.big{
+.big {
     font-size: 3vw;
 }

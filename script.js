@@ -16,7 +16,7 @@ function ChangeScene(sceneName) {
     }
 }
 
-function BasicsOn(){
+function BasicsOn() {
     document.getElementById("nev-t").innerHTML = "Név";
     document.getElementById("szul-t").innerHTML = "Született";
     document.getElementById("elhunyt-t").innerHTML = "Elhunyt";
@@ -25,7 +25,7 @@ function BasicsOn(){
     document.getElementById("adatok").innerHTML = "További információkért kattints a képre!";
 }
 
-function BasicScene(){
+function BasicScene() {
     document.getElementById("nev").innerHTML = "";
     document.getElementById("szul").innerHTML = "";
     document.getElementById("elhunyt").innerHTML = "";
@@ -39,15 +39,15 @@ function BasicScene(){
     document.getElementById("adatok-t").innerHTML = "";
 }
 
-function ChangeImg(id, img){
-    document.getElementById(`${id}`).src = `../Images/${img}`;
+function ChangeImg(id, img) {
+    document.getElementById(`${id}`).src = `./Images/${img}`;
 }
 
-function ChangeImgBack(id){
-    if(id == "tihi_noblur"){
-        document.getElementById(`${id}`).src = `../Images/Nemes_Tihamér-1 (1).jpg`;
+function ChangeImgBack(id) {
+    if (id == "tihi_noblur") {
+        document.getElementById(`${id}`).src = `./Images/Nemes_Tihamér-1 (1).jpg`;
     }
-    else{
-        document.getElementById(`${id}`).src = `../Images/Visit_of_Bill_Gates,_Chairman_of_Breakthrough_Energy_Ventures,_to_the_European_Commission_5_(cropped)_(cropped) (1) (1).jpg`;
+    else {
+        document.getElementById(`${id}`).src = `./Images/Visit_of_Bill_Gates,_Chairman_of_Breakthrough_Energy_Ventures,_to_the_European_Commission_5_(cropped)_(cropped) (1) (1).jpg`;
     }
 }
