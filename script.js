@@ -16,6 +16,21 @@ function ChangeScene(sceneName) {
     }
 }
 
+function ChangeText(id, ember) {
+    console.log(id);
+
+    billSzovegek = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
+    tihiSzovegek = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
+    if (ember == "Bill") {
+        num = id.split("_")[2];
+        document.getElementById(id).innerHTML = billSzovegek[num];
+    }
+    else if (ember == "Tihi") {
+        num = id.split("_")[2];
+        document.getElementById(id).innerHTML = tihiSzovegek[num];
+    }
+}
+
 function BasicsOn() {
     document.getElementById("nev-t").innerHTML = "Név";
     document.getElementById("szul-t").innerHTML = "Született";
@@ -52,6 +67,6 @@ function ChangeImgBack(id) {
     }
 }
 
-function TextRemove(id){
+function TextRemove(id) {
     document.getElementById(`${id}`).innerHTML = "";
 }
