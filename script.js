@@ -19,15 +19,15 @@ function ChangeScene(sceneName) {
 function ChangeText(id) {
     console.log(id);
     num = id.split("_")[2];
-    ember = id.split("_")[0];
-    billSzovegek = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
-    tihiSzovegek = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
+    ember = id.split("_")[1];
+    billSzovegek = ["Általános iskolai tanulmányait a Lakeside magániskolában kezdte meg. </br> Az iskola az elsők között vezette be a számítástechnikai képzést", "Nyolcadikos korában már programozni tanult BASIC nyelven, első programja egy amőbajáték volt", "1974-ben kezdte meg egyetemi tanulmányait a Harvardon, ám 1976-ban halasztás mellett döntött, </br> végül sosem fejezte be az iskolát", "1975 júliusában új céget alapítottak, melynek a Micro-Soft nevet adták", "A Microsoft BASIC-je került az Apple első gépére </br> Emellett az Multiplan és a Word is mind az ő nevéhez köthetők", "Az MS-DOS és a Windows a Microsoft lehíresebb fejlesztései", "Bill Gates és felesége 2000-ben hozta létre a Bill és Melinda Gates alapítványt </br> AIDS-ellenes kutatásokat hajtottak végre és támogatták a malária elleni vakcinák fejlesztését", "2005. március 2-án lovagi címet kapott II. Erzsébet brit királynőtől"];
+    tihiSzovegek = ["1917-ben szerezte meg oklevelét Budapesten a Műegyetemen", "1921-től kezdve a Telefonhírmondónál dolgozott, később kinevezték főmérnöknek", "Az Elektromos és Finommechanikai Rt. igazgatása után a Posta Kísérleti Állomáshoz került", "Az 1930-as években kezdte el a televíziózás tanulmányozását, majd 1938-ban szabadalmi bejelentést tett színes televízió megvalósítására", "Több sakkozó- és sakkfeladványokat megoldó gépet is készített, melyek az emberi gondolkodást modellezték", "Számtalan televíziós szabadalma szimulálta az emberi szem funkcióit, valamint postamérnökként hozzájárult a magyar televíziózást megteremtéséhez", "Kibernetikai gépek című könyvét barátai adták ki 1962-ben. Könyvében sokmás mellett foglalkozott a számítástechnikával is", "Emlékét őrzi többek között az évente megrendezett Nemes Tihamér Országos Informatikai Tanulmányi Verseny is"];
     if (ember == "bill") {
-        document.getElementById(id).innerHTML = billSzovegek[num];
+        document.getElementById(id).innerHTML = billSzovegek[num-1];
     }
     else if (ember == "tihi") {
         num = id.split("_")[2];
-        document.getElementById(id).innerHTML = tihiSzovegek[num];
+        document.getElementById(id).innerHTML = tihiSzovegek[num-1];
     }
 }
 
@@ -41,7 +41,7 @@ function BasicsOn() {
 }
 
 function BasicScene() {
-    document.getElementById("nev").innerHTML = "";
+    document.getElementById("nev").innerHTML = "Húzd az egeret a kép egyik felére!";
     document.getElementById("szul").innerHTML = "";
     document.getElementById("elhunyt").innerHTML = "";
     document.getElementById("ism").innerHTML = "";

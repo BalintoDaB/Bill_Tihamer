@@ -137,6 +137,10 @@ body {
     /* color: #aeb4e7; */
 }
 
+.cim{
+    width: 100%;
+}
+
 .mid {
     margin-top: 30px;
     text-align: center;
