@@ -130,11 +130,11 @@ body {
     filter: blur(0px);
 }
 
-.single_left h1:hover,
-.single_right h1:hover {
+.single_left .cim:hover,
+.single_right .cim:hover {
     transform: scale(1.2);
     transition: .5s;
-    color: #27187E;
+    /* color: #aeb4e7; */
 }
 
 .mid {
@@ -167,4 +167,9 @@ body {
 #wave path {
     fill: #755ff3;
     fill-rule: evenodd;
+}
+
+.leiras{
+    padding: 5px 0px;
+    text-decoration: underline 3px #aeb4e7;
 }

@@ -51,3 +51,7 @@ function ChangeImgBack(id) {
         document.getElementById(`${id}`).src = `./Images/Visit_of_Bill_Gates,_Chairman_of_Breakthrough_Energy_Ventures,_to_the_European_Commission_5_(cropped)_(cropped) (1) (1).jpg`;
     }
 }
+
+function TextRemove(id){
+    document.getElementById(`${id}`).innerHTML = "";
+}
