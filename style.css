@@ -153,3 +153,18 @@ body {
 .big {
     font-size: 3vw;
 }
+
+#wave {
+    position: fixed;
+    z-index: -10;
+    bottom: 0;
+    left: 0 !important;
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#wave path {
+    fill: #755ff3;
+    fill-rule: evenodd;
+}
